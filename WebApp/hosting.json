@@ -1,0 +1,10 @@
+{
+  "Host": "xxxx.sss.com",
+  "PATH_BASE": "aabbcc1",
+  "Logging": {
+    "IncludeScopes": false,
+    "LogLevel": {
+      "Default": "Warning"
+    }
+  }
+}
