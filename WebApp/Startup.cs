@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.FileProviders;
 
 namespace WebApp
 {
@@ -99,7 +100,8 @@ namespace WebApp
             app.UseStaticFiles();
             //app.UseStaticFiles(new StaticFileOptions()
             //{
-            //    RequestPath = new PathString("/staticfiles")
+            //    FileProvider = new PhysicalFileProvider(env.WebRootPath)
+            //    //RequestPath = new PathString("/staticfiles")
             //});
 
             //…Ë÷√ƒ¨»œ“≥√Ê
