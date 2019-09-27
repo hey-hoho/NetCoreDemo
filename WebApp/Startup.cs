@@ -57,6 +57,32 @@ namespace WebApp
             {
                 options.OutputFormatters.Add(new ProtobufFormatter());
             });
+
+            services.AddSwaggerGen(options =>
+            {
+                options.DescribeAllEnumsAsStrings();
+                options.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info
+                {
+                    Title = "Marketing HTTP API",
+                    Version = "v1",
+                    Description = "The Marketing Service HTTP API",
+                    TermsOfService = "Terms Of Service"
+                });
+            });
+            //API版本控制
+            services.AddApiVersioning(o =>
+            {
+                //ReportApiVersions设置为true, 在Api请求的响应头部，会追加当前Api支持的版本
+                o.ReportApiVersions = true;
+                //标记当客户端没有指定版本号的时候，是否使用默认版本号
+                o.AssumeDefaultVersionWhenUnspecified = true;
+                //默认版本号
+                o.DefaultApiVersion = new Microsoft.AspNetCore.Mvc.ApiVersion(1, 0);
+                //使用请求头来控制api版本
+                //o.ApiVersionReader = new HeaderApiVersionReader("x-api-version");
+                //使用查询字符串和请求头来控制版本
+                //o.ApiVersionReader = ApiVersionReader.Combine(new QueryStringApiVersionReader(), new HeaderApiVersionReader("x-api-version"));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -113,6 +139,14 @@ namespace WebApp
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSwagger()
+              .UseSwaggerUI(c =>
+              {
+                  c.SwaggerEndpoint($"/swagger/v1/swagger.json", "Marketing.API V1");
+                  c.OAuthClientId("marketingswaggerui");
+                  c.OAuthAppName("Marketing Swagger UI");
+              });
 
             app.UseEndpoints(endpoints =>
             {

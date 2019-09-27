@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApp</name>
+    </assembly>
+    <members>
+        <member name="T:mvcApp.Controllers.ValueController">
+            <summary>
+            tttttt
+            </summary>
+        </member>
+        <member name="M:mvcApp.Controllers.ValueController.Get">
+            <summary>
+            sdfdsfds
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
