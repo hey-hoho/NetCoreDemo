@@ -4,12 +4,12 @@
         <name>WebApp</name>
     </assembly>
     <members>
-        <member name="T:mvcApp.Controllers.ValueController">
+        <member name="T:WebApp.Controllers.ValueController">
             <summary>
             tttttt
             </summary>
         </member>
-        <member name="M:mvcApp.Controllers.ValueController.Get">
+        <member name="M:WebApp.Controllers.ValueController.Get">
             <summary>
             sdfdsfds
             </summary>

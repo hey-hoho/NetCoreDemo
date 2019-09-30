@@ -5,13 +5,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace mvcApp.Controllers
+namespace WebApp.Controllers
 {
     /// <summary>
     /// tttttt
     /// </summary>
-    [ApiVersion("1.0", Deprecated = false)]
-    [Route("api/{v:apiVersion}/Value")]
+    //[ApiVersion("1.0", Deprecated = false)]
+    [Route("api/Value")]
     [ApiController]
     public class ValueController : ControllerBase
     {
@@ -19,7 +19,7 @@ namespace mvcApp.Controllers
         /// sdfdsfds
         /// </summary>
         /// <returns></returns>
-        [HttpGet, MapToApiVersion("1.0")]
+        //[HttpGet, MapToApiVersion("1.0")]
         public IEnumerable<object> Get()
         {
             //using (BloggingContext db=new BloggingContext())
