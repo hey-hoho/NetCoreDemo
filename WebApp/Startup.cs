@@ -59,20 +59,19 @@ namespace WebApp
                 options.OutputFormatters.Add(new ProtobufFormatter());
             });
 
-            //services.AddSwaggerGen(options =>
-            //{
-            //    //options.DescribeAllEnumsAsStrings();
-            //    options.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info
-            //    {
-            //        Title = "Marketing HTTP API",
-            //        Version = "v1",
-            //        Description = "The Marketing Service HTTP API",
-            //        TermsOfService = "Terms Of Service"
-            //    });
-            //    var basePath = Path.GetDirectoryName(typeof(Program).Assembly.Location);
-            //    var xmlPath = Path.Combine(basePath, "WebApp.xml");
-            //    options.IncludeXmlComments(xmlPath);
-            //});
+            services.AddSwaggerGen(options =>
+            {
+                //options.DescribeAllEnumsAsStrings();
+                options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+                {
+                    Title = "Marketing HTTP API",
+                    Version = "v1",
+                    Description = "The Marketing Service HTTP API"
+                });
+                var basePath = Path.GetDirectoryName(typeof(Program).Assembly.Location);
+                var xmlPath = Path.Combine(basePath, "WebApp.xml");
+                options.IncludeXmlComments(xmlPath);
+            });
             //API°æ±¾¿ØÖÆ
             //services.AddApiVersioning(o =>
             //{
@@ -144,12 +143,13 @@ namespace WebApp
 
             app.UseAuthorization();
 
-            //app.UseSwagger().UseSwaggerUI(c =>
-            //  {
-            //      c.SwaggerEndpoint($"/swagger/v1/swagger.json", "Marketing.API V1");
-            //      c.OAuthClientId("marketingswaggerui");
-            //      c.OAuthAppName("Marketing Swagger UI");
-            //  });
+            app.UseSwagger().UseSwaggerUI(c =>
+              {
+                  c.SwaggerEndpoint($"/swagger/v1/swagger.json", "Marketing.API V1");
+                  //c.RoutePrefix = string.Empty;
+                  c.OAuthClientId("marketingswaggerui");
+                  c.OAuthAppName("Marketing Swagger UI");
+              });
 
             app.UseEndpoints(endpoints =>
             {

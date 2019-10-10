@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace WebApp.Controllers
 {
     /// <summary>
-    /// tttttt
+    /// ttt
     /// </summary>
     //[ApiVersion("1.0", Deprecated = false)]
     [Route("api/Value")]
@@ -19,7 +19,8 @@ namespace WebApp.Controllers
         /// sdfdsfds
         /// </summary>
         /// <returns></returns>
-        //[HttpGet, MapToApiVersion("1.0")]
+        [HttpGet]
+        //[MapToApiVersion("1.0")]
         public IEnumerable<object> Get()
         {
             //using (BloggingContext db=new BloggingContext())
@@ -29,7 +30,7 @@ namespace WebApp.Controllers
             return new string[] { "Value1 from Version 1", "value2 from Version 1" };
         }
     }
-    
+
     [ApiController]
     public class ValueV2Controller : ControllerBase
     {
