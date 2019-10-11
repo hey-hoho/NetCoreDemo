@@ -1,27 +1,51 @@
-﻿{
-  "iisSettings": {
-    "windowsAuthentication": false, 
-    "anonymousAuthentication": true, 
-    "iisExpress": {
-      "applicationUrl": "http://localhost:54848",
-      "sslPort": 44347
+﻿
+//launchSettings.json文件中的所有设置仅仅针对开发环境，产品环境下是不需要这个文件的，应用发布后生成的文件列表中也不包含该文件。该文件不需要手工进行编辑，当前项目属性对话框（通过在解决方案对话框中右击选择“属性（Properties）”选项）中“调试（Debug）”选项卡下的所有设置最终都会体现在该文件上。
+
+{
+"iisSettings": {
+  "windowsAuthentication": false,
+  "anonymousAuthentication": true,
+  "iisExpress": {
+    "applicationUrl": "http://localhost:54848",
+    "sslPort": 44347
+  }
+}, "profiles": {
+  "IIS Express": {
+    "commandName": "IISExpress",
+    "launchBrowser": true,
+    "environmentVariables": {
+      "ASPNETCORE_ENVIRONMENT": "Development"
     }
   },
-  "profiles": {
-    "IIS Express": {
-      "commandName": "IISExpress",
-      "launchBrowser": true,
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
-    },
-    "WebApp": {
-      "commandName": "Project",
-      "launchBrowser": true,
-      "applicationUrl": "https://localhost:5001;http://localhost:5000",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+  "WebApp": {
+    "commandName": "Project",
+    "launchBrowser": true,
+    "applicationUrl": "https://localhost:5001;http://localhost:5000",
+    "environmentVariables": {
+      "ASPNETCORE_ENVIRONMENT": "Development"
     }
   }
-}
+} }
+
+
+//commandName：启动当前应用程序的命令类型，有效的选项包括IIS、IISExpress、Executable和Project，前三个选项分别表示采用IIS、IISExpress和指定的可执行文件（.exe）来启动应用程序。如果我们使用dotnet run命令来启动程序，对应Profile的启动命名名称应该设置为Project。
+
+//executablePath：如果commandName属性被设置为Executable，我们需要利用该属性来设置启动可执行文件的路径（绝对路径或者相对路径）。
+
+//environmentVariables：该属性用来设置环境变量。由于launchSettings.json仅仅使用在开发环境，所以默认会添加一个名为“ASPNETCORE_ENVIRONMENT”的环境变量，并将它的值设置为“Development”，ASP.NET Core应用中正是利用这样一个环境变量来表示当前的部署环境。
+
+//commandLineArgs：命令行参数，即传入Main方法的参数列表。
+
+//workingDirectory：启动当前应用运行的工作目录。
+
+//applicationUrl：应用程序采用的URL列表，多个URL之间采用分号（“；”）进行分隔。
+
+//launchBrowser：一个布尔类型的开关，表示应用程序的时候是否自动启动浏览器。
+
+//launchUrl：如果launchBrowser被设置为true，浏览器采用的初始化路径通过该属性进行设置。
+
+//nativeDebugging：是否启动本地代码调试（Native Code Debugging），默认值为false。
+
+//externalUrlConfiguration：如果该属性被设置为true，意味着禁用本地的配置，默认值为false。
+
+//use64Bit：如果commandName属性设置为IIS Express，该属性决定是采用X64版本还是X86版本，默认值为false，意味着ASP.NET Core应用默认会采用X86版本的IIS Express。
