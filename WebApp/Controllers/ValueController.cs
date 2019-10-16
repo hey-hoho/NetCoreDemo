@@ -25,7 +25,7 @@ namespace WebApp.Controllers
         {
             //using (BloggingContext db=new BloggingContext())
             //{
-            //    return db.Blog.ToList();
+            // h   return db.Blog.ToList();
             //}
             return new string[] { "Value1 from Version 1", "value2 from Version 1" };
         }

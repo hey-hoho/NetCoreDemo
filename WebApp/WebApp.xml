@@ -15,5 +15,25 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:WebApp.TokenModelJwt">
+            <summary>
+            令牌
+            </summary>
+        </member>
+        <member name="P:WebApp.TokenModelJwt.Uid">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:WebApp.TokenModelJwt.Role">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="P:WebApp.TokenModelJwt.Work">
+            <summary>
+            职能
+            </summary>
+        </member>
     </members>
 </doc>

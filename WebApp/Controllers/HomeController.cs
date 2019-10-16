@@ -49,7 +49,6 @@ namespace WebApp.Controllers
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page." + _cache.Get<string>("ckey");
-
             return View();
         }
 
