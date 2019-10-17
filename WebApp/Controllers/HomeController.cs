@@ -33,6 +33,7 @@ namespace WebApp.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogInformation("Serilog test info.");
             _logger.LogWarning("asdddddddddddasssssssssssssss=============" + _hosting.Value.Host);
             _cache.Set("ckey", "qweqweqwe", TimeSpan.FromSeconds(5));
             return View();

@@ -1,0 +1,19 @@
+2019-10-17 17:11:08.315 +08:00 [INF] User profile is available. Using 'C:\Users\heao\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-10-17 17:11:08.853 +08:00 [INF] Now listening on: https://localhost:5001
+2019-10-17 17:11:08.854 +08:00 [INF] Now listening on: http://localhost:5000
+2019-10-17 17:11:08.856 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2019-10-17 17:11:08.856 +08:00 [INF] Hosting environment: Development
+2019-10-17 17:11:08.857 +08:00 [INF] Content root path: D:\heao\0.heao\github\NetCoreDemo\WebApp
+2019-10-17 17:11:10.958 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/  
+2019-10-17 17:11:10.966 +08:00 [INF] Accessing expired session, Key:bf3732f3-72b4-0416-afc6-d226a4092bfd
+2019-10-17 17:11:10.982 +08:00 [INF] User IP:::1
+2019-10-17 17:11:11.055 +08:00 [INF] Executing endpoint 'WebApp.Controllers.HomeController.Index (WebApp)'
+2019-10-17 17:11:11.085 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller WebApp.Controllers.HomeController (WebApp).
+2019-10-17 17:11:11.089 +08:00 [INF] Serilog test info.
+2019-10-17 17:11:11.091 +08:00 [WRN] asdddddddddddasssssssssssssss=============xxxx.sss.com
+2019-10-17 17:11:11.105 +08:00 [INF] Executing ViewResult, running view Index.
+2019-10-17 17:11:11.210 +08:00 [INF] Executed ViewResult - view Index executed in 107.59580000000001ms.
+2019-10-17 17:11:11.212 +08:00 [INF] Executed action WebApp.Controllers.HomeController.Index (WebApp) in 125.8545ms
+2019-10-17 17:11:11.212 +08:00 [INF] Executed endpoint 'WebApp.Controllers.HomeController.Index (WebApp)'
+2019-10-17 17:11:11.215 +08:00 [INF] Session started; Key:bf3732f3-72b4-0416-afc6-d226a4092bfd, Id:161ecc43-de55-2910-93ce-dd1cc0aa6bc8
+2019-10-17 17:11:11.219 +08:00 [INF] Request finished in 265.3226ms 200 text/html; charset=utf-8

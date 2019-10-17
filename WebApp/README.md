@@ -10,3 +10,4 @@
 - session支持
 - 本地缓存示例
 - swagger支持
+- serilog支持
