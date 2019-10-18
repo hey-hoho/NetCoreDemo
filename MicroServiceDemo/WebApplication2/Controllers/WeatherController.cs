@@ -12,7 +12,7 @@ namespace WebApplication2.Controllers
     [ApiController]
     public class WeatherController : ControllerBase
     {
-        private const string CalculationApiUrl = "http://localhost:52843/api/calculation/stddev";
+        private const string CalculationApiUrl = "http://localhost:50032/api/calculation/stddev";
 
         static readonly Dictionary<string, List<Tuple<DateTime, float>>> weatherData;
 

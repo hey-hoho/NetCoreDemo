@@ -6,7 +6,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 52843
+          "Port": 50032
         }
       ],
       "UpstreamPathTemplate": "/add/{x}/{y}",
@@ -25,7 +25,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 52843
+          "Port": 50032
         }
       ],
       "UpstreamPathTemplate": "/sub/{x}/{y}",
@@ -37,7 +37,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 52843
+          "Port": 50032
         }
       ],
       "UpstreamPathTemplate": "/stddev",
@@ -45,7 +45,7 @@
     },
     {
       "DownstreamPathTemplate": "/api/weather/stddev/{city}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
