@@ -1,0 +1,33 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/empty.proto"; //需要使用空参数和空返回值时，需要使用这个默认的协议文件 
+
+option csharp_namespace="GrpcServer";
+
+package Account;
+
+service Account {
+    rpc Login (LoginModel) returns (UserModel);
+    rpc Logout (google.protobuf.Empty) returns (google.protobuf.Empty);
+}
+
+message LoginModel {
+    string userName=1;
+    string userPsw=2;
+}
+
+message UserModel {
+    string NickName=1;
+    string Token=2;
+    Date LoginDate=3;
+}
+
+message Date {
+    int32 Year=1;
+    int32 Month=2;
+    int32 Day=3;
+    int32 Hour=4;
+    int32 Minute=5;
+    int32 Second=6;
+    int32 FFF=7;  
+} 
