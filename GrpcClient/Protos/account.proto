@@ -4,23 +4,23 @@ option csharp_namespace="GrpcServer";
 
 package Account;
 
-service Account{
+service Account {
     rpc Login (LoginModel) returns (UserModel);
     rpc Logout (google.protobuf.Empty) returns (google.protobuf.Empty);
 }
 
-message LoginModel{
+message LoginModel {
     string userName=1;
     string userPsw=2;
 }
 
-message UserModel{
+message UserModel {
     string NickName=1;
     string Token=2;
     Date LoginDate=3;
 }
 
-message Date{
+message Date {
     int32 Year=1;
     int32 Month=2;
     int32 Day=3;

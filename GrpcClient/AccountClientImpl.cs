@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using GrpcServer;
 
 namespace GrpcClient
 {
@@ -16,8 +17,8 @@ namespace GrpcClient
         }
         public void Login()
         {
-            var result = _accountClient.Login(new LoginModel() { UserName = "1234", UserPsd = "1234" });
-            Console.WriteLine(result.Data);
+            var result = _accountClient.Login(new LoginModel() { UserName = "1234", UserPsw = "1234" });
+            Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(result));
         }
         public void Logout()
         {

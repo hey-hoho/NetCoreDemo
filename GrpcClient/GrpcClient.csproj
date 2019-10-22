@@ -15,11 +15,7 @@
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
   </ItemGroup>
-
   <ItemGroup>
-    <None Update="Protos\account.proto">
-      <GrpcServices>Client</GrpcServices>
-    </None>
+    <Protobuf Include="Protos\*.proto" GrpcServices="Client" Link="Protos\%(RecursiveDir)%(Filename)%(Extension)" />
   </ItemGroup>
-
 </Project>

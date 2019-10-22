@@ -8,7 +8,7 @@ namespace GrpcClient
         static void Main(string[] args)
         {
             var channel = GrpcChannel.ForAddress("https://localhost:5001");
-            var client = new Account.AccountClient(channel);
+            var client = new GrpcServer.Account.AccountClient(channel);
 
             AccountClientImpl accountClientImpl = new AccountClientImpl(channel, client);
             if (Console.ReadLine() == "1")

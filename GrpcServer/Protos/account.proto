@@ -1,7 +1,5 @@
 ﻿syntax = "proto3";
-
 import "google/protobuf/empty.proto"; //需要使用空参数和空返回值时，需要使用这个默认的协议文件 
-
 option csharp_namespace="GrpcServer";
 
 package Account;
