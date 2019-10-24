@@ -12,18 +12,21 @@ namespace ConsoleApp
         {
             Console.WriteLine("Hello World!");
 
-            var serviceCollection = new ServiceCollection();
-            serviceCollection.AddLogging((config) =>
-            {
-                config.AddConsole();
-            });
+            var demo = new CatFramework.Demo();
+            demo.Run();
 
-            serviceCollection.AddSingleton<IFooService, FooService>();
-            serviceCollection.AddSingleton<IBarService, BarService>();
+            //var serviceCollection = new ServiceCollection();
+            //serviceCollection.AddLogging((config) =>
+            //{
+            //    config.AddConsole();
+            //});
 
-            var serviceProvider = serviceCollection.BuildServiceProvider();
-            var bar = serviceProvider.GetService<IBarService>();
-            bar.DoSomeRealWork();
+            //serviceCollection.AddSingleton<IFooService, FooService>();
+            //serviceCollection.AddSingleton<IBarService, BarService>();
+
+            //var serviceProvider = serviceCollection.BuildServiceProvider();
+            //var bar = serviceProvider.GetService<IBarService>();
+            //bar.DoSomeRealWork();
 
             Console.ReadKey();
         }
