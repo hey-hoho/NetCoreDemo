@@ -10,6 +10,10 @@ namespace WebApplication1.Controllers
     [ApiController]
     public class CalculationController : ControllerBase
     {
+        [HttpGet("info")]
+        public ActionResult<string> Info()
+            => Environment.GetEnvironmentVariable("machineName") ?? Environment.MachineName;
+
         [HttpGet("add/{x}/{y}")]
         public int Add(int x, int y) => x + y;
 

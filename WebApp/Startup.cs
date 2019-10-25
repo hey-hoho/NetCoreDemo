@@ -15,6 +15,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.FileProviders;
 using System.IO;
 using Microsoft.OpenApi.Models;
+using Steeltoe.Discovery.Client;
 
 namespace WebApp
 {
@@ -54,6 +55,8 @@ namespace WebApp
             {
                 options.ConstraintMap.Add("email", typeof(EmailRouterConstraint));
             });
+
+            services.AddDiscoveryClient(Configuration);
 
             services.AddMvc(options =>
             {
@@ -147,7 +150,7 @@ namespace WebApp
             //defaultOption.DefaultFileNames.Clear();
             //defaultOption.DefaultFileNames.Add("mydefault.html");
             //app.UseDefaultFiles(defaultOption);
-
+            app.UseDiscoveryClient();
             app.UseRouting();
 
             //app.UseAuthentication();

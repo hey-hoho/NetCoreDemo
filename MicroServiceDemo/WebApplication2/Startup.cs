@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Steeltoe.Discovery.Client;
 
 namespace WebApplication2
 {
@@ -25,6 +26,7 @@ namespace WebApplication2
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDiscoveryClient(Configuration);
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -42,6 +44,7 @@ namespace WebApplication2
 
             app.UseHttpsRedirection();
             app.UseMvc();
+            app.UseDiscoveryClient();
         }
     }
 }

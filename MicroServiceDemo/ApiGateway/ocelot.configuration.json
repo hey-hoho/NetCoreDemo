@@ -1,69 +1,99 @@
 {
-  "ReRoutes": [
-    {
-      "DownstreamPathTemplate": "/api/calculation/add/{x}/{y}",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 50032
-        }
-      ],
-      "UpstreamPathTemplate": "/add/{x}/{y}",
-      "UpstreamHttpMethod": [ "Get" ],
-      "RateLimitOptions": {
-        "ClientWhitelist": [ "admin" ], // 白名单
-        "EnableRateLimiting": true, // 是否启用限流
-        "Period": "1m", // 统计时间段：1s, 5m, 1h, 1d
-        "PeriodTimespan": 15, // 多少秒之后客户端可以重试
-        "Limit": 5 // 在统计时间段内允许的最大请求数量
-      }
-    },
-    {
-      "DownstreamPathTemplate": "/api/calculation/sub/{x}/{y}",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 50032
-        }
-      ],
-      "UpstreamPathTemplate": "/sub/{x}/{y}",
-      "UpstreamHttpMethod": [ "Get" ]
-    },
-    {
-      "DownstreamPathTemplate": "/api/calculation/stddev",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 50032
-        }
-      ],
-      "UpstreamPathTemplate": "/stddev",
-      "UpstreamHttpMethod": [ "Post" ]
-    },
-    {
-      "DownstreamPathTemplate": "/api/weather/stddev/{city}",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 44335
-        }
-      ],
-      "UpstreamPathTemplate": "/weather-stddev/{city}",
-      "UpstreamHttpMethod": [ "Get" ]
-    }
-  ],
+  //"ReRoutes": [
+  //  {
+  //    "DownstreamPathTemplate": "/api/calculation/add/{x}/{y}",
+  //    "DownstreamScheme": "http",
+  //    "DownstreamHostAndPorts": [
+  //      {
+  //        "Host": "localhost",
+  //        "Port": 50032
+  //      }
+  //    ],
+  //    "UpstreamPathTemplate": "/add/{x}/{y}",
+  //    "UpstreamHttpMethod": [ "Get" ],
+  //    "RateLimitOptions": {
+  //      "ClientWhitelist": [ "admin" ], // 白名单
+  //      "EnableRateLimiting": true, // 是否启用限流
+  //      "Period": "1m", // 统计时间段：1s, 5m, 1h, 1d
+  //      "PeriodTimespan": 15, // 多少秒之后客户端可以重试
+  //      "Limit": 5 // 在统计时间段内允许的最大请求数量
+  //    }
+  //  },
+  //  {
+  //    "DownstreamPathTemplate": "/api/calculation/sub/{x}/{y}",
+  //    "DownstreamScheme": "http",
+  //    "DownstreamHostAndPorts": [
+  //      {
+  //        "Host": "localhost",
+  //        "Port": 50032
+  //      }
+  //    ],
+  //    "UpstreamPathTemplate": "/sub/{x}/{y}",
+  //    "UpstreamHttpMethod": [ "Get" ]
+  //  },
+  //  {
+  //    "DownstreamPathTemplate": "/api/calculation/stddev",
+  //    "DownstreamScheme": "http",
+  //    "DownstreamHostAndPorts": [
+  //      {
+  //        "Host": "localhost",
+  //        "Port": 50032
+  //      }
+  //    ],
+  //    "UpstreamPathTemplate": "/stddev",
+  //    "UpstreamHttpMethod": [ "Post" ]
+  //  },
+  //  {
+  //    "DownstreamPathTemplate": "/api/weather/stddev/{city}",
+  //    "DownstreamScheme": "https",
+  //    "DownstreamHostAndPorts": [
+  //      {
+  //        "Host": "localhost",
+  //        "Port": 44335
+  //      }
+  //    ],
+  //    "UpstreamPathTemplate": "/weather-stddev/{city}",
+  //    "UpstreamHttpMethod": [ "Get" ]
+  //  }
+  //],
+  //"GlobalConfiguration": {
+  //  "RequestIdKey": "OcRequestId",
+  //  "AdministrationPath": "/administration",
+  //  "RateLimitOptions": {
+  //    "DisableRateLimitHeaders": false, // Http头  X-Rate-Limit 和 Retry-After 是否禁用
+  //    "QuotaExceededMessage": "Too many requests, are you OK?", // 当请求过载被截断时返回的消息
+  //    "HttpStatusCode": 999, // 当请求过载被截断时返回的http status
+  //    "ClientIdHeader": "client_id" // 用来识别客户端的请求头，默认是 ClientId
+  //  }
+  //}
+  "ReRoutes": [],
   "GlobalConfiguration": {
     "RequestIdKey": "OcRequestId",
     "AdministrationPath": "/administration",
-    "RateLimitOptions": {
-      "DisableRateLimitHeaders": false, // Http头  X-Rate-Limit 和 Retry-After 是否禁用
-      "QuotaExceededMessage": "Too many requests, are you OK?", // 当请求过载被截断时返回的消息
-      "HttpStatusCode": 999, // 当请求过载被截断时返回的http status
-      "ClientIdHeader": "client_id" // 用来识别客户端的请求头，默认是 ClientId
+    "ServiceDiscoveryProvider": {
+      "Host": "localhost",
+      "Port": 8761,
+      "Type": "Eureka",
+      "Token": null,
+      "ConfigurationKey": null
+    },
+
+    "DownstreamScheme": "http"
+  },
+  "spring": {
+    "application": {
+      "name": "api-gateway"
+    }
+  },
+  "eureka": {
+    "client": {
+      "serviceUrl": "http://localhost:8761/eureka/",
+      "shouldRegisterWithEureka": true,
+      "shouldFetchRegistry": true
+    },
+    "instance": {
+      "port": 56955,
+      "preferIpAddress": true
     }
   }
 }

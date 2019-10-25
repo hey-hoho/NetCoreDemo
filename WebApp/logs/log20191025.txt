@@ -1,0 +1,713 @@
+2019-10-25 17:09:56.114 +08:00 [INF] User profile is available. Using 'C:\Users\heao\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-10-25 17:09:56.535 +08:00 [INF] Now listening on: https://localhost:5001
+2019-10-25 17:09:56.535 +08:00 [INF] Now listening on: http://localhost:5000
+2019-10-25 17:09:56.535 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2019-10-25 17:09:56.535 +08:00 [INF] Hosting environment: Development
+2019-10-25 17:09:56.535 +08:00 [INF] Content root path: D:\heao\0.heao\github\NetCoreDemo\WebApp
+2019-10-25 17:09:56.917 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/  
+2019-10-25 17:09:56.927 +08:00 [INF] Accessing expired session, Key:bf3732f3-72b4-0416-afc6-d226a4092bfd
+2019-10-25 17:09:56.931 +08:00 [INF] User IP:::1
+2019-10-25 17:09:57.053 +08:00 [INF] Executing endpoint 'WebApp.Controllers.HomeController.Index (WebApp)'
+2019-10-25 17:09:57.107 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller WebApp.Controllers.HomeController (WebApp).
+2019-10-25 17:09:57.116 +08:00 [INF] Serilog test info.
+2019-10-25 17:09:57.118 +08:00 [WRN] asdddddddddddasssssssssssssss=============xxxx.sss.com
+2019-10-25 17:09:57.163 +08:00 [INF] Executing ViewResult, running view Index.
+2019-10-25 17:09:57.268 +08:00 [INF] Executed ViewResult - view Index executed in 121.45800000000001ms.
+2019-10-25 17:09:57.269 +08:00 [INF] Executed action WebApp.Controllers.HomeController.Index (WebApp) in 161.4437ms
+2019-10-25 17:09:57.270 +08:00 [INF] Executed endpoint 'WebApp.Controllers.HomeController.Index (WebApp)'
+2019-10-25 17:09:57.273 +08:00 [INF] Session started; Key:bf3732f3-72b4-0416-afc6-d226a4092bfd, Id:b68977fd-248c-f277-ed37-848be5d29897
+2019-10-25 17:09:57.276 +08:00 [INF] Request finished in 361.75440000000003ms 200 text/html; charset=utf-8
+2019-10-25 17:09:57.518 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico  
+2019-10-25 17:09:57.519 +08:00 [INF] User IP:::1
+2019-10-25 17:09:57.548 +08:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'D:\heao\0.heao\github\NetCoreDemo\WebApp\wwwroot\favicon.ico'
+2019-10-25 17:09:57.550 +08:00 [INF] Request finished in 32.1105ms 200 image/x-icon
+2019-10-25 17:10:07.472 +08:00 [INF] Application is shutting down...
+2019-10-25 17:17:14.954 +08:00 [INF] User profile is available. Using 'C:\Users\heao\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-10-25 17:17:15.166 +08:00 [INF] Now listening on: https://localhost:5001
+2019-10-25 17:17:15.166 +08:00 [INF] Now listening on: http://localhost:5000
+2019-10-25 17:17:15.166 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2019-10-25 17:17:15.166 +08:00 [INF] Hosting environment: Development
+2019-10-25 17:17:15.166 +08:00 [INF] Content root path: D:\heao\0.heao\github\NetCoreDemo\WebApp
+2019-10-25 17:17:15.629 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/  
+2019-10-25 17:17:15.642 +08:00 [INF] Accessing expired session, Key:bf3732f3-72b4-0416-afc6-d226a4092bfd
+2019-10-25 17:17:15.658 +08:00 [INF] User IP:::1
+2019-10-25 17:17:15.713 +08:00 [INF] Executing endpoint 'WebApp.Controllers.HomeController.Index (WebApp)'
+2019-10-25 17:17:15.775 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller WebApp.Controllers.HomeController (WebApp).
+2019-10-25 17:17:15.794 +08:00 [INF] Executed action WebApp.Controllers.HomeController.Index (WebApp) in 9.1964ms
+2019-10-25 17:17:15.798 +08:00 [INF] Executed endpoint 'WebApp.Controllers.HomeController.Index (WebApp)'
+2019-10-25 17:17:15.805 +08:00 [INF] Session started; Key:bf3732f3-72b4-0416-afc6-d226a4092bfd, Id:ddd958c7-08d5-7b81-c4fc-f051c73619a5
+2019-10-25 17:17:15.811 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Steeltoe.Common.Discovery.IDiscoveryClient' while attempting to activate 'WebApp.Controllers.HomeController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at WebApp.RequstIPMiddleware.Invoke(HttpContext context) in D:\heao\0.heao\github\NetCoreDemo\WebApp\RequstIPMiddleware.cs:line 25
+   at WebApp.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 129
+--- End of stack trace from previous location where exception was thrown ---
+   at WebApp.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 120
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-10-25 17:17:15.936 +08:00 [INF] Request finished in 309.9886ms 500 text/html; charset=utf-8
+2019-10-25 17:17:36.147 +08:00 [INF] Application is shutting down...
+2019-10-25 17:20:39.082 +08:00 [INF] User profile is available. Using 'C:\Users\heao\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-10-25 17:20:39.152 +08:00 [FTL] Application startup exception
+System.InvalidOperationException: Application is running inside IIS process but is not configured to use IIS server.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2019-10-25 17:21:00.820 +08:00 [INF] User profile is available. Using 'C:\Users\heao\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-10-25 17:21:00.948 +08:00 [FTL] Application startup exception
+System.InvalidOperationException: Application is running inside IIS process but is not configured to use IIS server.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2019-10-25 17:21:19.246 +08:00 [INF] User profile is available. Using 'C:\Users\heao\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-10-25 17:21:19.713 +08:00 [INF] Now listening on: https://localhost:5001
+2019-10-25 17:21:19.713 +08:00 [INF] Now listening on: http://localhost:5000
+2019-10-25 17:21:19.713 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2019-10-25 17:21:19.713 +08:00 [INF] Hosting environment: Development
+2019-10-25 17:21:19.713 +08:00 [INF] Content root path: D:\heao\0.heao\github\NetCoreDemo\WebApp
+2019-10-25 17:21:20.322 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/  
+2019-10-25 17:21:20.328 +08:00 [INF] Accessing expired session, Key:bf3732f3-72b4-0416-afc6-d226a4092bfd
+2019-10-25 17:21:20.332 +08:00 [INF] User IP:::1
+2019-10-25 17:21:20.385 +08:00 [INF] Executing endpoint 'WebApp.Controllers.HomeController.Index (WebApp)'
+2019-10-25 17:21:20.410 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller WebApp.Controllers.HomeController (WebApp).
+2019-10-25 17:21:20.417 +08:00 [INF] Serilog test info.
+2019-10-25 17:21:20.419 +08:00 [WRN] asdddddddddddasssssssssssssss=============xxxx.sss.com
+2019-10-25 17:21:20.427 +08:00 [INF] Executing ViewResult, running view Index.
+2019-10-25 17:21:20.527 +08:00 [INF] Executed ViewResult - view Index executed in 99.3163ms.
+2019-10-25 17:21:20.528 +08:00 [INF] Executed action WebApp.Controllers.HomeController.Index (WebApp) in 117.55770000000001ms
+2019-10-25 17:21:20.528 +08:00 [INF] Executed endpoint 'WebApp.Controllers.HomeController.Index (WebApp)'
+2019-10-25 17:21:20.530 +08:00 [INF] Session started; Key:bf3732f3-72b4-0416-afc6-d226a4092bfd, Id:fae140e0-558b-eb2e-5943-5a09b6fac071
+2019-10-25 17:21:20.533 +08:00 [INF] Request finished in 215.07240000000002ms 200 text/html; charset=utf-8
+2019-10-25 17:21:49.183 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Home/Weather  
+2019-10-25 17:21:49.184 +08:00 [INF] User IP:::1
+2019-10-25 17:21:49.186 +08:00 [INF] Executing endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:21:49.199 +08:00 [INF] Route matched with {action = "Weather", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Weather() on controller WebApp.Controllers.HomeController (WebApp).
+2019-10-25 17:21:49.219 +08:00 [INF] Executed action WebApp.Controllers.HomeController.Weather (WebApp) in 20.1323ms
+2019-10-25 17:21:49.220 +08:00 [INF] Executed endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:21:49.225 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at WebApp.Controllers.HomeController.Weather() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Controllers\HomeController.cs:line 70
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at WebApp.RequstIPMiddleware.Invoke(HttpContext context) in D:\heao\0.heao\github\NetCoreDemo\WebApp\RequstIPMiddleware.cs:line 25
+   at WebApp.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 132
+--- End of stack trace from previous location where exception was thrown ---
+   at WebApp.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 123
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-10-25 17:21:49.284 +08:00 [INF] Request finished in 101.3223ms 500 text/html; charset=utf-8
+2019-10-25 17:24:46.898 +08:00 [INF] User profile is available. Using 'C:\Users\heao\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-10-25 17:24:47.339 +08:00 [INF] Now listening on: https://localhost:5001
+2019-10-25 17:24:47.339 +08:00 [INF] Now listening on: http://localhost:5000
+2019-10-25 17:24:47.339 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2019-10-25 17:24:47.339 +08:00 [INF] Hosting environment: Development
+2019-10-25 17:24:47.339 +08:00 [INF] Content root path: D:\heao\0.heao\github\NetCoreDemo\WebApp
+2019-10-25 17:24:48.019 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/  
+2019-10-25 17:24:48.028 +08:00 [INF] Accessing expired session, Key:bf3732f3-72b4-0416-afc6-d226a4092bfd
+2019-10-25 17:24:48.031 +08:00 [INF] User IP:::1
+2019-10-25 17:24:48.088 +08:00 [INF] Executing endpoint 'WebApp.Controllers.HomeController.Index (WebApp)'
+2019-10-25 17:24:48.117 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller WebApp.Controllers.HomeController (WebApp).
+2019-10-25 17:24:48.120 +08:00 [INF] Serilog test info.
+2019-10-25 17:24:48.122 +08:00 [WRN] asdddddddddddasssssssssssssss=============xxxx.sss.com
+2019-10-25 17:24:48.131 +08:00 [INF] Executing ViewResult, running view Index.
+2019-10-25 17:24:48.212 +08:00 [INF] Executed ViewResult - view Index executed in 81.7898ms.
+2019-10-25 17:24:48.213 +08:00 [INF] Executed action WebApp.Controllers.HomeController.Index (WebApp) in 95.5039ms
+2019-10-25 17:24:48.213 +08:00 [INF] Executed endpoint 'WebApp.Controllers.HomeController.Index (WebApp)'
+2019-10-25 17:24:48.218 +08:00 [INF] Session started; Key:bf3732f3-72b4-0416-afc6-d226a4092bfd, Id:160e30d6-422e-7720-e12a-dc2cf94beac5
+2019-10-25 17:24:48.221 +08:00 [INF] Request finished in 209.67170000000002ms 200 text/html; charset=utf-8
+2019-10-25 17:24:51.628 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Home/Weather  
+2019-10-25 17:24:51.629 +08:00 [INF] User IP:::1
+2019-10-25 17:24:51.631 +08:00 [INF] Executing endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:24:51.639 +08:00 [INF] Route matched with {action = "Weather", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Weather() on controller WebApp.Controllers.HomeController (WebApp).
+2019-10-25 17:24:51.654 +08:00 [INF] Executed action WebApp.Controllers.HomeController.Weather (WebApp) in 14.179400000000001ms
+2019-10-25 17:24:51.654 +08:00 [INF] Executed endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:24:51.659 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at WebApp.Controllers.HomeController.Weather() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Controllers\HomeController.cs:line 70
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at WebApp.RequstIPMiddleware.Invoke(HttpContext context) in D:\heao\0.heao\github\NetCoreDemo\WebApp\RequstIPMiddleware.cs:line 25
+   at WebApp.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 132
+--- End of stack trace from previous location where exception was thrown ---
+   at WebApp.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 123
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-10-25 17:24:51.707 +08:00 [INF] Request finished in 79.4621ms 500 text/html; charset=utf-8
+2019-10-25 17:24:51.812 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico  
+2019-10-25 17:24:51.814 +08:00 [INF] User IP:::1
+2019-10-25 17:24:51.820 +08:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'D:\heao\0.heao\github\NetCoreDemo\WebApp\wwwroot\favicon.ico'
+2019-10-25 17:24:51.821 +08:00 [INF] Request finished in 8.6998ms 200 image/x-icon
+2019-10-25 17:24:53.429 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Home/Weather  
+2019-10-25 17:24:53.431 +08:00 [INF] User IP:::1
+2019-10-25 17:24:53.433 +08:00 [INF] Executing endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:24:53.434 +08:00 [INF] Route matched with {action = "Weather", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Weather() on controller WebApp.Controllers.HomeController (WebApp).
+2019-10-25 17:24:53.437 +08:00 [INF] Executed action WebApp.Controllers.HomeController.Weather (WebApp) in 2.6311ms
+2019-10-25 17:24:53.437 +08:00 [INF] Executed endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:24:53.437 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at WebApp.Controllers.HomeController.Weather() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Controllers\HomeController.cs:line 70
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at WebApp.RequstIPMiddleware.Invoke(HttpContext context) in D:\heao\0.heao\github\NetCoreDemo\WebApp\RequstIPMiddleware.cs:line 25
+   at WebApp.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 132
+--- End of stack trace from previous location where exception was thrown ---
+   at WebApp.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 123
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-10-25 17:24:53.451 +08:00 [INF] Request finished in 21.9825ms 500 text/html; charset=utf-8
+2019-10-25 17:24:53.535 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico  
+2019-10-25 17:24:53.536 +08:00 [INF] User IP:::1
+2019-10-25 17:24:53.537 +08:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'D:\heao\0.heao\github\NetCoreDemo\WebApp\wwwroot\favicon.ico'
+2019-10-25 17:24:53.537 +08:00 [INF] Request finished in 1.7763ms 200 image/x-icon
+2019-10-25 17:24:53.883 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Home/Weather  
+2019-10-25 17:24:53.884 +08:00 [INF] User IP:::1
+2019-10-25 17:24:53.884 +08:00 [INF] Executing endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:24:53.885 +08:00 [INF] Route matched with {action = "Weather", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Weather() on controller WebApp.Controllers.HomeController (WebApp).
+2019-10-25 17:24:53.888 +08:00 [INF] Executed action WebApp.Controllers.HomeController.Weather (WebApp) in 2.7907ms
+2019-10-25 17:24:53.888 +08:00 [INF] Executed endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:24:53.889 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at WebApp.Controllers.HomeController.Weather() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Controllers\HomeController.cs:line 70
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at WebApp.RequstIPMiddleware.Invoke(HttpContext context) in D:\heao\0.heao\github\NetCoreDemo\WebApp\RequstIPMiddleware.cs:line 25
+   at WebApp.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 132
+--- End of stack trace from previous location where exception was thrown ---
+   at WebApp.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 123
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-10-25 17:24:53.904 +08:00 [INF] Request finished in 21.0779ms 500 text/html; charset=utf-8
+2019-10-25 17:24:53.988 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico  
+2019-10-25 17:24:53.989 +08:00 [INF] User IP:::1
+2019-10-25 17:24:53.990 +08:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'D:\heao\0.heao\github\NetCoreDemo\WebApp\wwwroot\favicon.ico'
+2019-10-25 17:24:53.990 +08:00 [INF] Request finished in 2.0703ms 200 image/x-icon
+2019-10-25 17:24:54.026 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Home/Weather  
+2019-10-25 17:24:54.026 +08:00 [INF] User IP:::1
+2019-10-25 17:24:54.027 +08:00 [INF] Executing endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:24:54.027 +08:00 [INF] Route matched with {action = "Weather", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Weather() on controller WebApp.Controllers.HomeController (WebApp).
+2019-10-25 17:24:54.029 +08:00 [INF] Executed action WebApp.Controllers.HomeController.Weather (WebApp) in 2.0601000000000003ms
+2019-10-25 17:24:54.029 +08:00 [INF] Executed endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:24:54.030 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at WebApp.Controllers.HomeController.Weather() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Controllers\HomeController.cs:line 70
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at WebApp.RequstIPMiddleware.Invoke(HttpContext context) in D:\heao\0.heao\github\NetCoreDemo\WebApp\RequstIPMiddleware.cs:line 25
+   at WebApp.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 132
+--- End of stack trace from previous location where exception was thrown ---
+   at WebApp.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 123
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-10-25 17:24:54.047 +08:00 [INF] Request finished in 21.7676ms 500 text/html; charset=utf-8
+2019-10-25 17:24:54.128 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico  
+2019-10-25 17:24:54.129 +08:00 [INF] User IP:::1
+2019-10-25 17:24:54.130 +08:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'D:\heao\0.heao\github\NetCoreDemo\WebApp\wwwroot\favicon.ico'
+2019-10-25 17:24:54.131 +08:00 [INF] Request finished in 2.3907000000000003ms 200 image/x-icon
+2019-10-25 17:24:54.286 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Home/Weather  
+2019-10-25 17:24:54.287 +08:00 [INF] User IP:::1
+2019-10-25 17:24:54.288 +08:00 [INF] Executing endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:24:54.288 +08:00 [INF] Route matched with {action = "Weather", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Weather() on controller WebApp.Controllers.HomeController (WebApp).
+2019-10-25 17:24:54.291 +08:00 [INF] Executed action WebApp.Controllers.HomeController.Weather (WebApp) in 2.3563ms
+2019-10-25 17:24:54.291 +08:00 [INF] Executed endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:24:54.292 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at WebApp.Controllers.HomeController.Weather() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Controllers\HomeController.cs:line 70
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at WebApp.RequstIPMiddleware.Invoke(HttpContext context) in D:\heao\0.heao\github\NetCoreDemo\WebApp\RequstIPMiddleware.cs:line 25
+   at WebApp.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 132
+--- End of stack trace from previous location where exception was thrown ---
+   at WebApp.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 123
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-10-25 17:24:54.303 +08:00 [INF] Request finished in 16.9738ms 500 text/html; charset=utf-8
+2019-10-25 17:24:54.371 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico  
+2019-10-25 17:24:54.372 +08:00 [INF] User IP:::1
+2019-10-25 17:24:54.372 +08:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'D:\heao\0.heao\github\NetCoreDemo\WebApp\wwwroot\favicon.ico'
+2019-10-25 17:24:54.374 +08:00 [INF] Request finished in 3.4277ms 200 image/x-icon
+2019-10-25 17:24:54.536 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Home/Weather  
+2019-10-25 17:24:54.537 +08:00 [INF] User IP:::1
+2019-10-25 17:24:54.537 +08:00 [INF] Executing endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:24:54.537 +08:00 [INF] Route matched with {action = "Weather", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Weather() on controller WebApp.Controllers.HomeController (WebApp).
+2019-10-25 17:24:54.540 +08:00 [INF] Executed action WebApp.Controllers.HomeController.Weather (WebApp) in 2.1981ms
+2019-10-25 17:24:54.540 +08:00 [INF] Executed endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:24:54.540 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at WebApp.Controllers.HomeController.Weather() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Controllers\HomeController.cs:line 70
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at WebApp.RequstIPMiddleware.Invoke(HttpContext context) in D:\heao\0.heao\github\NetCoreDemo\WebApp\RequstIPMiddleware.cs:line 25
+   at WebApp.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 132
+--- End of stack trace from previous location where exception was thrown ---
+   at WebApp.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 123
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-10-25 17:24:54.551 +08:00 [INF] Request finished in 14.807ms 500 text/html; charset=utf-8
+2019-10-25 17:24:54.634 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico  
+2019-10-25 17:24:54.634 +08:00 [INF] User IP:::1
+2019-10-25 17:24:54.635 +08:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'D:\heao\0.heao\github\NetCoreDemo\WebApp\wwwroot\favicon.ico'
+2019-10-25 17:24:54.635 +08:00 [INF] Request finished in 1.0583ms 200 image/x-icon
+2019-10-25 17:24:54.691 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Home/Weather  
+2019-10-25 17:24:54.691 +08:00 [INF] User IP:::1
+2019-10-25 17:24:54.691 +08:00 [INF] Executing endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:24:54.692 +08:00 [INF] Route matched with {action = "Weather", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Weather() on controller WebApp.Controllers.HomeController (WebApp).
+2019-10-25 17:24:54.696 +08:00 [INF] Executed action WebApp.Controllers.HomeController.Weather (WebApp) in 4.102ms
+2019-10-25 17:24:54.696 +08:00 [INF] Executed endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:24:54.696 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at WebApp.Controllers.HomeController.Weather() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Controllers\HomeController.cs:line 70
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at WebApp.RequstIPMiddleware.Invoke(HttpContext context) in D:\heao\0.heao\github\NetCoreDemo\WebApp\RequstIPMiddleware.cs:line 25
+   at WebApp.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 132
+--- End of stack trace from previous location where exception was thrown ---
+   at WebApp.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 123
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-10-25 17:24:54.708 +08:00 [INF] Request finished in 16.9643ms 500 text/html; charset=utf-8
+2019-10-25 17:24:54.812 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico  
+2019-10-25 17:24:54.812 +08:00 [INF] User IP:::1
+2019-10-25 17:24:54.815 +08:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'D:\heao\0.heao\github\NetCoreDemo\WebApp\wwwroot\favicon.ico'
+2019-10-25 17:24:54.815 +08:00 [INF] Request finished in 3.7353ms 200 image/x-icon
+2019-10-25 17:24:54.918 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Home/Weather  
+2019-10-25 17:24:54.918 +08:00 [INF] User IP:::1
+2019-10-25 17:24:54.919 +08:00 [INF] Executing endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:24:54.919 +08:00 [INF] Route matched with {action = "Weather", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Weather() on controller WebApp.Controllers.HomeController (WebApp).
+2019-10-25 17:24:54.921 +08:00 [INF] Executed action WebApp.Controllers.HomeController.Weather (WebApp) in 2.2893ms
+2019-10-25 17:24:54.922 +08:00 [INF] Executed endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:24:54.922 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at WebApp.Controllers.HomeController.Weather() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Controllers\HomeController.cs:line 70
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at WebApp.RequstIPMiddleware.Invoke(HttpContext context) in D:\heao\0.heao\github\NetCoreDemo\WebApp\RequstIPMiddleware.cs:line 25
+   at WebApp.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 132
+--- End of stack trace from previous location where exception was thrown ---
+   at WebApp.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 123
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-10-25 17:24:54.935 +08:00 [INF] Request finished in 16.8641ms 500 text/html; charset=utf-8
+2019-10-25 17:24:55.015 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico  
+2019-10-25 17:24:55.016 +08:00 [INF] User IP:::1
+2019-10-25 17:24:55.016 +08:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'D:\heao\0.heao\github\NetCoreDemo\WebApp\wwwroot\favicon.ico'
+2019-10-25 17:24:55.017 +08:00 [INF] Request finished in 1.6462ms 200 image/x-icon
+2019-10-25 17:25:15.950 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Home/Weather  
+2019-10-25 17:25:15.950 +08:00 [INF] User IP:::1
+2019-10-25 17:25:15.951 +08:00 [INF] Executing endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:25:15.952 +08:00 [INF] Route matched with {action = "Weather", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Weather() on controller WebApp.Controllers.HomeController (WebApp).
+2019-10-25 17:25:15.955 +08:00 [INF] Executed action WebApp.Controllers.HomeController.Weather (WebApp) in 2.8116000000000003ms
+2019-10-25 17:25:15.956 +08:00 [INF] Executed endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:25:15.956 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at WebApp.Controllers.HomeController.Weather() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Controllers\HomeController.cs:line 70
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at WebApp.RequstIPMiddleware.Invoke(HttpContext context) in D:\heao\0.heao\github\NetCoreDemo\WebApp\RequstIPMiddleware.cs:line 25
+   at WebApp.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 132
+--- End of stack trace from previous location where exception was thrown ---
+   at WebApp.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 123
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-10-25 17:25:15.966 +08:00 [INF] Request finished in 16.715500000000002ms 500 text/html; charset=utf-8
+2019-10-25 17:25:16.056 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico  
+2019-10-25 17:25:16.056 +08:00 [INF] User IP:::1
+2019-10-25 17:25:16.057 +08:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'D:\heao\0.heao\github\NetCoreDemo\WebApp\wwwroot\favicon.ico'
+2019-10-25 17:25:16.057 +08:00 [INF] Request finished in 1.3099ms 200 image/x-icon
+2019-10-25 17:25:16.533 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Home/Weather  
+2019-10-25 17:25:16.533 +08:00 [INF] User IP:::1
+2019-10-25 17:25:16.534 +08:00 [INF] Executing endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:25:16.534 +08:00 [INF] Route matched with {action = "Weather", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Weather() on controller WebApp.Controllers.HomeController (WebApp).
+2019-10-25 17:25:16.536 +08:00 [INF] Executed action WebApp.Controllers.HomeController.Weather (WebApp) in 2.2225ms
+2019-10-25 17:25:16.537 +08:00 [INF] Executed endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:25:16.537 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at WebApp.Controllers.HomeController.Weather() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Controllers\HomeController.cs:line 70
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at WebApp.RequstIPMiddleware.Invoke(HttpContext context) in D:\heao\0.heao\github\NetCoreDemo\WebApp\RequstIPMiddleware.cs:line 25
+   at WebApp.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 132
+--- End of stack trace from previous location where exception was thrown ---
+   at WebApp.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 123
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-10-25 17:25:16.549 +08:00 [INF] Request finished in 16.1411ms 500 text/html; charset=utf-8
+2019-10-25 17:25:16.600 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico  
+2019-10-25 17:25:16.601 +08:00 [INF] User IP:::1
+2019-10-25 17:25:16.601 +08:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'D:\heao\0.heao\github\NetCoreDemo\WebApp\wwwroot\favicon.ico'
+2019-10-25 17:25:16.602 +08:00 [INF] Request finished in 1.6796ms 200 image/x-icon
+2019-10-25 17:25:16.733 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Home/Weather  
+2019-10-25 17:25:16.734 +08:00 [INF] User IP:::1
+2019-10-25 17:25:16.735 +08:00 [INF] Executing endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:25:16.735 +08:00 [INF] Route matched with {action = "Weather", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Weather() on controller WebApp.Controllers.HomeController (WebApp).
+2019-10-25 17:25:16.738 +08:00 [INF] Executed action WebApp.Controllers.HomeController.Weather (WebApp) in 2.0901ms
+2019-10-25 17:25:16.738 +08:00 [INF] Executed endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:25:16.738 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at WebApp.Controllers.HomeController.Weather() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Controllers\HomeController.cs:line 70
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at WebApp.RequstIPMiddleware.Invoke(HttpContext context) in D:\heao\0.heao\github\NetCoreDemo\WebApp\RequstIPMiddleware.cs:line 25
+   at WebApp.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 132
+--- End of stack trace from previous location where exception was thrown ---
+   at WebApp.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 123
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-10-25 17:25:16.748 +08:00 [INF] Request finished in 14.8587ms 500 text/html; charset=utf-8
+2019-10-25 17:25:16.829 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico  
+2019-10-25 17:25:16.830 +08:00 [INF] User IP:::1
+2019-10-25 17:25:16.831 +08:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'D:\heao\0.heao\github\NetCoreDemo\WebApp\wwwroot\favicon.ico'
+2019-10-25 17:25:16.831 +08:00 [INF] Request finished in 1.7887000000000002ms 200 image/x-icon
+2019-10-25 17:25:16.934 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Home/Weather  
+2019-10-25 17:25:16.934 +08:00 [INF] User IP:::1
+2019-10-25 17:25:16.935 +08:00 [INF] Executing endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:25:16.935 +08:00 [INF] Route matched with {action = "Weather", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Weather() on controller WebApp.Controllers.HomeController (WebApp).
+2019-10-25 17:25:16.937 +08:00 [INF] Executed action WebApp.Controllers.HomeController.Weather (WebApp) in 2.2332ms
+2019-10-25 17:25:16.937 +08:00 [INF] Executed endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:25:16.938 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at WebApp.Controllers.HomeController.Weather() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Controllers\HomeController.cs:line 70
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at WebApp.RequstIPMiddleware.Invoke(HttpContext context) in D:\heao\0.heao\github\NetCoreDemo\WebApp\RequstIPMiddleware.cs:line 25
+   at WebApp.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 132
+--- End of stack trace from previous location where exception was thrown ---
+   at WebApp.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 123
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-10-25 17:25:16.948 +08:00 [INF] Request finished in 13.9685ms 500 text/html; charset=utf-8
+2019-10-25 17:25:17.029 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico  
+2019-10-25 17:25:17.029 +08:00 [INF] User IP:::1
+2019-10-25 17:25:17.030 +08:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'D:\heao\0.heao\github\NetCoreDemo\WebApp\wwwroot\favicon.ico'
+2019-10-25 17:25:17.030 +08:00 [INF] Request finished in 1.4279000000000002ms 200 image/x-icon
+2019-10-25 17:27:18.133 +08:00 [INF] User profile is available. Using 'C:\Users\heao\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-10-25 17:27:18.569 +08:00 [INF] Now listening on: https://localhost:5001
+2019-10-25 17:27:18.569 +08:00 [INF] Now listening on: http://localhost:5000
+2019-10-25 17:27:18.569 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2019-10-25 17:27:18.569 +08:00 [INF] Hosting environment: Development
+2019-10-25 17:27:18.569 +08:00 [INF] Content root path: D:\heao\0.heao\github\NetCoreDemo\WebApp
+2019-10-25 17:27:19.339 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/  
+2019-10-25 17:27:19.358 +08:00 [INF] Accessing expired session, Key:bf3732f3-72b4-0416-afc6-d226a4092bfd
+2019-10-25 17:27:19.363 +08:00 [INF] User IP:::1
+2019-10-25 17:27:19.413 +08:00 [INF] Executing endpoint 'WebApp.Controllers.HomeController.Index (WebApp)'
+2019-10-25 17:27:19.449 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller WebApp.Controllers.HomeController (WebApp).
+2019-10-25 17:27:19.453 +08:00 [INF] Serilog test info.
+2019-10-25 17:27:19.455 +08:00 [WRN] asdddddddddddasssssssssssssss=============xxxx.sss.com
+2019-10-25 17:27:19.467 +08:00 [INF] Executing ViewResult, running view Index.
+2019-10-25 17:27:19.571 +08:00 [INF] Executed ViewResult - view Index executed in 106.4196ms.
+2019-10-25 17:27:19.572 +08:00 [INF] Executed action WebApp.Controllers.HomeController.Index (WebApp) in 122.6431ms
+2019-10-25 17:27:19.572 +08:00 [INF] Executed endpoint 'WebApp.Controllers.HomeController.Index (WebApp)'
+2019-10-25 17:27:19.578 +08:00 [INF] Session started; Key:bf3732f3-72b4-0416-afc6-d226a4092bfd, Id:d4dda7a4-83b8-eb45-4fbe-188343ae62f5
+2019-10-25 17:27:19.595 +08:00 [INF] Request finished in 259.6751ms 200 text/html; charset=utf-8
+2019-10-25 17:27:21.869 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Home/Weather  
+2019-10-25 17:27:21.870 +08:00 [INF] User IP:::1
+2019-10-25 17:27:21.871 +08:00 [INF] Executing endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:27:21.880 +08:00 [INF] Route matched with {action = "Weather", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Weather() on controller WebApp.Controllers.HomeController (WebApp).
+2019-10-25 17:27:21.895 +08:00 [INF] Executed action WebApp.Controllers.HomeController.Weather (WebApp) in 14.616200000000001ms
+2019-10-25 17:27:21.895 +08:00 [INF] Executed endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:27:21.900 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at WebApp.Controllers.HomeController.Weather() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Controllers\HomeController.cs:line 81
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at WebApp.RequstIPMiddleware.Invoke(HttpContext context) in D:\heao\0.heao\github\NetCoreDemo\WebApp\RequstIPMiddleware.cs:line 25
+   at WebApp.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 132
+--- End of stack trace from previous location where exception was thrown ---
+   at WebApp.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 123
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-10-25 17:27:21.954 +08:00 [INF] Request finished in 85.7453ms 500 text/html; charset=utf-8
+2019-10-25 17:27:40.500 +08:00 [INF] User profile is available. Using 'C:\Users\heao\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-10-25 17:27:41.492 +08:00 [INF] Now listening on: https://localhost:5001
+2019-10-25 17:27:41.492 +08:00 [INF] Now listening on: http://localhost:5000
+2019-10-25 17:27:41.492 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2019-10-25 17:27:41.492 +08:00 [INF] Hosting environment: Development
+2019-10-25 17:27:41.492 +08:00 [INF] Content root path: D:\heao\0.heao\github\NetCoreDemo\WebApp
+2019-10-25 17:27:43.544 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/  
+2019-10-25 17:27:43.558 +08:00 [INF] Accessing expired session, Key:bf3732f3-72b4-0416-afc6-d226a4092bfd
+2019-10-25 17:27:43.582 +08:00 [INF] User IP:::1
+2019-10-25 17:27:43.675 +08:00 [INF] Executing endpoint 'WebApp.Controllers.HomeController.Index (WebApp)'
+2019-10-25 17:27:43.711 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller WebApp.Controllers.HomeController (WebApp).
+2019-10-25 17:27:43.719 +08:00 [INF] Serilog test info.
+2019-10-25 17:27:43.721 +08:00 [WRN] asdddddddddddasssssssssssssss=============xxxx.sss.com
+2019-10-25 17:27:43.740 +08:00 [INF] Executing ViewResult, running view Index.
+2019-10-25 17:27:43.868 +08:00 [INF] Executed ViewResult - view Index executed in 137.57680000000002ms.
+2019-10-25 17:27:43.870 +08:00 [INF] Executed action WebApp.Controllers.HomeController.Index (WebApp) in 157.7738ms
+2019-10-25 17:27:43.870 +08:00 [INF] Executed endpoint 'WebApp.Controllers.HomeController.Index (WebApp)'
+2019-10-25 17:27:43.876 +08:00 [INF] Session started; Key:bf3732f3-72b4-0416-afc6-d226a4092bfd, Id:6b9af978-c677-6de3-a09c-f1fa2856a53b
+2019-10-25 17:27:43.887 +08:00 [INF] Request finished in 344.52320000000003ms 200 text/html; charset=utf-8
+2019-10-25 17:27:45.511 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Home/Weather  
+2019-10-25 17:27:45.520 +08:00 [INF] User IP:::1
+2019-10-25 17:27:45.523 +08:00 [INF] Executing endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:27:45.532 +08:00 [INF] Route matched with {action = "Weather", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Weather() on controller WebApp.Controllers.HomeController (WebApp).
+2019-10-25 17:29:18.076 +08:00 [INF] Executed action WebApp.Controllers.HomeController.Weather (WebApp) in 92543.0659ms
+2019-10-25 17:29:18.076 +08:00 [INF] Executed endpoint 'WebApp.Controllers.HomeController.Weather (WebApp)'
+2019-10-25 17:29:18.333 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at WebApp.Controllers.HomeController.Weather() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Controllers\HomeController.cs:line 81
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at WebApp.RequstIPMiddleware.Invoke(HttpContext context) in D:\heao\0.heao\github\NetCoreDemo\WebApp\RequstIPMiddleware.cs:line 25
+   at WebApp.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 132
+--- End of stack trace from previous location where exception was thrown ---
+   at WebApp.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in D:\heao\0.heao\github\NetCoreDemo\WebApp\Startup.cs:line 123
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-10-25 17:29:18.412 +08:00 [INF] Request finished in 92901.6026ms 500 text/html; charset=utf-8

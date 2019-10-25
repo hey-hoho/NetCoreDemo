@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="Ocelot" Version="13.8.0-alpha0019" />
+    <PackageReference Include="Ocelot.Provider.Eureka" Version="13.5.2" />
   </ItemGroup>
 
 </Project>
