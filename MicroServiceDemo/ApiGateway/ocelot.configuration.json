@@ -70,6 +70,7 @@
   "GlobalConfiguration": {
     "RequestIdKey": "OcRequestId",
     "AdministrationPath": "/administration",
+    //服务发现策略
     "ServiceDiscoveryProvider": {
       "Host": "localhost",
       "Port": 8761,
@@ -77,11 +78,17 @@
       "Token": null,
       "ConfigurationKey": null
     },
+    //Ocelot支持如下几种负载均衡策略：
+    //"LeastConnection：根据服务当前正在处理的请求个数来决定将使用哪个服务来处理新接收到的请求，将请求转发给当前连接数最少的服务" 
+    //"RoundRobin：经典模式，轮询法，逐个选择可用的服务来处理接收到的请求",
+    //"NoLoadBalancer：仅使用第一个可用的服务来处理接收到的请求" 
+    //"CookieStickySessions：通过使用Cookie，确保特定的请求能够被分配到特定的服务上进行处理",
     "LoadBalancerOptions": {
       "Type": "RoundRobin"
     },
     "DownstreamScheme": "http"
   },
+  //下面是要注入到eureka中的信息
   "spring": {
     "application": {
       "name": "api-gateway"

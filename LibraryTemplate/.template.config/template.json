@@ -1,0 +1,20 @@
+
+/*********************
+  ******Reference ****
+https://github.com/dotnet/templating/wiki/Reference-for-template.json
+https://www.cnblogs.com/lwqlun/p/11155666.html
+  *********************/
+
+{
+  "author": "hoho", //指明了模板的作者，必填
+  "classifications": [ "Web/Plugins" ], //指明了模板的分类，必填
+  "name": "LibraryTemplate", //表示模板的名称，当你使用dotnet new创建项目时，指定的模板名称，必填
+  "identity": "HohoLibraryTemplate", //表示模板的唯一名称，可选
+  "shortName": "hlt", //表示模板的简短名称，必填
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "LibraryTemplate", //当使用dotnet new指定-n参数的时候，-n参数的值，会替换sourceName指定的字符串
+  "preferNameDirectory": true //是否生成相同名称的目录，可选
+}

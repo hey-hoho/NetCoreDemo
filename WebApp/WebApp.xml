@@ -4,6 +4,12 @@
         <name>WebApp</name>
     </assembly>
     <members>
+        <member name="M:WebApp.Controllers.PluginsController.Enable">
+            <summary>
+            动态加载一个插件
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:WebApp.Controllers.ValueController">
             <summary>
             ttt

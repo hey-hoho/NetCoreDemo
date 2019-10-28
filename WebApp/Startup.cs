@@ -16,6 +16,8 @@ using Microsoft.Extensions.FileProviders;
 using System.IO;
 using Microsoft.OpenApi.Models;
 using Steeltoe.Discovery.Client;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using WebApp.Plugins;
 
 namespace WebApp
 {
@@ -55,6 +57,10 @@ namespace WebApp
             {
                 options.ConstraintMap.Add("email", typeof(EmailRouterConstraint));
             });
+
+            //
+            services.AddSingleton<IActionDescriptorChangeProvider>(MyActionDescriptorChangeProvider.Instance);
+            services.AddSingleton(MyActionDescriptorChangeProvider.Instance);
 
             services.AddDiscoveryClient(Configuration);
 
