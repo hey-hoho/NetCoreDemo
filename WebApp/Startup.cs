@@ -18,6 +18,7 @@ using Microsoft.OpenApi.Models;
 using Steeltoe.Discovery.Client;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using WebApp.Plugins;
+using WebApp.Filters;
 
 namespace WebApp
 {
@@ -67,6 +68,8 @@ namespace WebApp
             services.AddMvc(options =>
             {
                 options.OutputFormatters.Add(new ProtobufFormatter());
+                //全局异常处理
+                options.Filters.Add(typeof(GlobalExceptionFilter));
             });
 
             services.AddSwaggerGen(options =>

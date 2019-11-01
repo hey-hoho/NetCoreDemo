@@ -10,6 +10,7 @@
 - session支持
 - 本地缓存示例
 - swagger支持
+- 全局异常过滤
 - serilog支持
 - 调用ocelot网关
 - 动态插件管理
