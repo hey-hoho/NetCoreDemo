@@ -110,7 +110,7 @@ namespace WebApp
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory, IHostApplicationLifetime appLifetime)
         {
             if (env.IsDevelopment())
             {
@@ -181,6 +181,23 @@ namespace WebApp
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            appLifetime.ApplicationStarted.Register(OnStarted);
+            appLifetime.ApplicationStopping.Register(OnStopping);
+            appLifetime.ApplicationStopped.Register(OnStopped);
+        }
+
+        private void OnStarted()
+        {
+            // Perform post-startup activities here
+        }
+        private void OnStopping()
+        {
+            // Perform on-stopping activities here
+        }
+        private void OnStopped()
+        {
+            // Perform post-stopped activities here
         }
     }
 }

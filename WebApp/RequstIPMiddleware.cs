@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using System;
@@ -19,7 +20,7 @@ namespace WebApp
             _logger = loggerFactory;
         }
 
-        public async Task Invoke(HttpContext context)
+        public async Task Invoke(HttpContext context, IWebHostEnvironment env)
         {
             _logger.LogInformation("User IP:" + context.Connection.RemoteIpAddress.ToString());
             await _next.Invoke(context);

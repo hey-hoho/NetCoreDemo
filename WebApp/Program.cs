@@ -25,12 +25,31 @@ namespace WebApp
                     .AddJsonFile("hosting.json", optional: true, reloadOnChange: true)
                     .Build();
 
+            //CreateDefaultBuilder执行下列任务：
+            //●使用应用程序的托管配置提供应用程序将Kestrel服务器配置为Web服务器。
+            //●将内容根设置为由 Directory.GetCurrentDirectory返回的路径。
+            //●通过以下对象加载主机配置：
+            //○前缀为ASPNETCORE_的环境变量（例如，ASPNETCORE_ENVIRONMENT）。
+            //○命令行参数。
+            //●按以下顺序加载应用程序配置：
+            //○appsettings.json。
+            //○appsettings.{ Environment}.json。
+            //○应用在使用入口程序集的Development环境中运行时的机密管理器。
+            //○环境变量。
+            //○命令行参数。
+            //●配置控制台和调试输出的日志记录。日志记录包含appsettings.json或appsettings.{ Environment}.json文件的日志记录配置部分中指定的日志筛选规则。
+            //●使用ASP.NET Core模块在IIS后面运行时，CreateDefaultBuilder会启用IIS集成，这会配置应用程序的基址和端口。IIS集成还配置应用程序以捕获启动错误。
+            //●如果应用环境为“开发（Development）”，请将ServiceProviderOptions.ValidateScopes设为true。
             return Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseConfiguration(config);
                     webBuilder.UseStartup<Startup>();
-                    webBuilder.UseKestrel();
+                    webBuilder.UseSetting(WebHostDefaults.ApplicationKey, "CoreWeb");
+                    webBuilder.ConfigureKestrel((context, options) =>
+                    {
+                        options.Limits.MaxRequestBodySize = 20000000;
+                    });
                     webBuilder.UseSerilog((context, configuration) =>
                     {
                         configuration
