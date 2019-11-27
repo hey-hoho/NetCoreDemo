@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -45,7 +46,7 @@ namespace WebApp
                 {
                     webBuilder.UseConfiguration(config);
                     webBuilder.UseStartup<Startup>();
-                    webBuilder.UseSetting(WebHostDefaults.ApplicationKey, "CoreWeb");
+                    //webBuilder.UseSetting(WebHostDefaults.ApplicationKey, "CoreWeb");
                     webBuilder.ConfigureKestrel((context, options) =>
                     {
                         options.Limits.MaxRequestBodySize = 20000000;

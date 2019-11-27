@@ -12,8 +12,12 @@ namespace ConsoleApp
         {
             Console.WriteLine("Hello World!");
 
-            var demo = new CatFramework.Demo();
-            demo.Run();
+            //var demo = new CatFramework.Demo();
+            //demo.Run();
+            string s = AppContext.BaseDirectory;
+
+
+            new AotuPlugin.PluginControl().LoadPlugin();
 
             //●Singleton服务实例保存在作为根容器的IServiceProvider对象上，所以它能够在多个同根IServiceProvider对象之间提供真正的单例保证。
             //●Scoped服务实例被保存在当前IServiceProvider对象上，所以它只能在当前范围内保证提供的实例是单例的。
