@@ -25,9 +25,9 @@ namespace ConsoleApp.ScoreRank
         /// <param name="max"></param>
         public RankBinaryTree(int max)
         {
-            _root = new TreeNode() { ValueFrom = 0, ValueTo = max + 1, Height = 1 };
+            _root = new TreeNode() { ValueFrom = 0, ValueTo = max, Height = 1 };
             _root.LeftChildNode = CreateChildNode(_root, 0, max / 2);
-            _root.RightChildNode = CreateChildNode(_root, max / 2, max);
+            _root.RightChildNode = CreateChildNode(_root, max / 2 + 1, max);
             _data = new List<int>();
         }
 
@@ -47,7 +47,7 @@ namespace ConsoleApp.ScoreRank
             if (min < max - 1)
             {
                 node.LeftChildNode = CreateChildNode(node, min, center);
-                node.RightChildNode = CreateChildNode(node, center, max);
+                node.RightChildNode = CreateChildNode(node, center + 1, max);
             }
             return node;
         }
@@ -71,7 +71,7 @@ namespace ConsoleApp.ScoreRank
         {
             if (node == null) return;
             //判断是否在这个节点范围内
-            if (value >= node.ValueFrom && value < node.ValueTo)
+            if (value >= node.ValueFrom && value <= node.ValueTo)
             {
                 //更新节点总数信息
                 node.Count++;
@@ -113,7 +113,7 @@ namespace ConsoleApp.ScoreRank
         {
             if (node == null) return;
             //判断是否在这个节点范围内
-            if (value >= node.ValueFrom && value < node.ValueTo)
+            if (value >= node.ValueFrom && value <= node.ValueTo)
             {
                 //更新总数信息
                 node.Count--;
@@ -144,7 +144,7 @@ namespace ConsoleApp.ScoreRank
         private int InnerGet(TreeNode node, int value)
         {
             if (node.LeftChildNode == null || node.RightChildNode == null) return 1;
-            if (value >= node.LeftChildNode.ValueFrom && value < node.LeftChildNode.ValueTo)
+            if (value >= node.LeftChildNode.ValueFrom && value <= node.LeftChildNode.ValueTo)
             {
                 //当这个值存在于左子节点中时，要累加右子节点的总数（表示这个数在多少名之后）
                 return node.RightChildNode.Count + InnerGet(node.LeftChildNode, value);
