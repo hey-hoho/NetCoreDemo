@@ -10,7 +10,7 @@ namespace ConsoleApp.ScoreRank
         {
             System.Diagnostics.Stopwatch stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
-            BalancedBinaryTree tree = new BalancedBinaryTree(1000000);
+            RankBinaryTree tree = new RankBinaryTree(1000000);
             stopwatch.Stop();
             Console.WriteLine($"构造二叉树耗时：{stopwatch.ElapsedMilliseconds}ms");
 
