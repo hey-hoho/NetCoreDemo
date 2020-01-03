@@ -7,7 +7,7 @@ namespace ConsoleApp.ScoreRank
     /// <summary>
     /// 平衡二叉树
     /// </summary>
-    public class BalancedBinaryTree
+    public class RankBinaryTree
     {
         /// <summary>
         /// 根节点
@@ -23,9 +23,9 @@ namespace ConsoleApp.ScoreRank
         /// 构造函数初始化根节点
         /// </summary>
         /// <param name="max"></param>
-        public BalancedBinaryTree(int max)
+        public RankBinaryTree(int max)
         {
-            _root = new TreeNode() { ValueFrom = 0, ValueTo = max, Height = 1 };
+            _root = new TreeNode() { ValueFrom = 0, ValueTo = max + 1, Height = 1 };
             _root.LeftChildNode = CreateChildNode(_root, 0, max / 2);
             _root.RightChildNode = CreateChildNode(_root, max / 2, max);
             _data = new List<int>();
