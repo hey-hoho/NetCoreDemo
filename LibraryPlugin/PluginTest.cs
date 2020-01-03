@@ -7,11 +7,11 @@ namespace LibraryPlugin
     {
         public void SayHello()
         {
-            //var Configuration = new Microsoft.Extensions.Configuration.ConfigurationBuilder().
-            //    Add(new JsonConfigurationSource { Path = "appsettings.json", Optional = false, ReloadOnChange = true }).Build();
+            var Configuration = new Microsoft.Extensions.Configuration.ConfigurationBuilder().
+                Add(new JsonConfigurationSource { Path = "testsettings.json", Optional = false, ReloadOnChange = true }).Build();
 
             Console.WriteLine($"{new LibraryTemplate.Class1().GetAssemblyName()}：hello~");
-            Console.WriteLine($"{System.Configuration.ConfigurationManager.AppSettings["MyKey"]}");
+            Console.WriteLine($"{Configuration["MyKey"]}");
         }
     }
 }
