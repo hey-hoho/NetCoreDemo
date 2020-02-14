@@ -19,7 +19,9 @@ namespace ConsoleApp
             //var s = Environment.GetEnvironmentVariables();
             //var ss = System.Net.Dns.GetHostEntry(System.Net.Dns.GetHostName()).AddressList.FirstOrDefault(address => address.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)?.ToString();
 
-            ScoreRank.TreeTester.Run();
+            //ScoreRank.TreeTester.Run();
+
+            new MiniAspNet.Tester().Run();
 
             //new AotuPlugin.PluginControl().LoadPlugin();
 
