@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -21,9 +22,18 @@ namespace ConsoleApp
 
             //ScoreRank.TreeTester.Run();
 
-            new MiniAspNet.Tester().Run();
+            //new MiniAspNet.Tester().Run();
 
-            //new AotuPlugin.PluginControl().LoadPlugin();
+            new AotuPlugin.PluginControl().LoadPlugin();
+
+            //ConcurrentQueue<int> queue = new System.Collections.Concurrent.ConcurrentQueue<int>();
+            //for (int i = 0; i < 100000; i++)
+            //{
+            //    queue.Enqueue(i);
+            //}
+            //int[] arry = queue.ToArray();
+            //queue.Enqueue(31231);
+            //Console.WriteLine(queue.Count());
 
             try
             {

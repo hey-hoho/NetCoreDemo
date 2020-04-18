@@ -10,9 +10,12 @@ namespace ConsoleApp.AotuPlugin
     {
         private AssemblyDependencyResolver _resolver;
 
-        public PluginLoadContext(string pluginPath)
+        //public WeakReference weakReference;
+
+        public PluginLoadContext(string pluginPath) : base(isCollectible: true)
         {
             _resolver = new AssemblyDependencyResolver(pluginPath);
+            //weakReference = new WeakReference(this, trackResurrection: true);
         }
 
         protected override Assembly Load(AssemblyName assemblyName)
@@ -20,7 +23,11 @@ namespace ConsoleApp.AotuPlugin
             string assemblyPath = _resolver.ResolveAssemblyToPath(assemblyName);
             if (assemblyPath != null)
             {
-                return LoadFromAssemblyPath(assemblyPath);
+                using (var stream = new System.IO.FileStream(assemblyPath, System.IO.FileMode.Open, System.IO.FileAccess.Read))
+                {
+                    return LoadFromStream(stream);
+                }
+                //return LoadFromAssemblyPath(assemblyPath);
             }
 
             return null;
