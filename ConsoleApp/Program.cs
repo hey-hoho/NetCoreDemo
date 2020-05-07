@@ -24,7 +24,9 @@ namespace ConsoleApp
 
             //new MiniAspNet.Tester().Run();
 
-            new AotuPlugin.PluginControl().LoadPlugin();
+            _ = new PerformanceCounter.PerformanceCounterListener();
+
+            //new AotuPlugin.PluginControl().LoadPlugin();
 
             //ConcurrentQueue<int> queue = new System.Collections.Concurrent.ConcurrentQueue<int>();
             //for (int i = 0; i < 100000; i++)

@@ -24,7 +24,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcClient", "GrpcClient\Gr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryTemplate", "LibraryTemplate\LibraryTemplate.csproj", "{F4175D75-C364-455E-BA1A-17119AB71B07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryPlugin", "LibraryPlugin\LibraryPlugin.csproj", "{7070206D-853D-47E5-BBB1-96DBBD6BD317}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryPlugin", "LibraryPlugin\LibraryPlugin.csproj", "{7070206D-853D-47E5-BBB1-96DBBD6BD317}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniAspNetCoreMvc", "MiniAspNetCoreMvc\MiniAspNetCoreMvc.csproj", "{0F685BD0-496A-4448-8B4F-D4A7FC28FF9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -68,6 +70,10 @@ Global
 		{7070206D-853D-47E5-BBB1-96DBBD6BD317}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7070206D-853D-47E5-BBB1-96DBBD6BD317}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7070206D-853D-47E5-BBB1-96DBBD6BD317}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F685BD0-496A-4448-8B4F-D4A7FC28FF9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F685BD0-496A-4448-8B4F-D4A7FC28FF9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F685BD0-496A-4448-8B4F-D4A7FC28FF9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F685BD0-496A-4448-8B4F-D4A7FC28FF9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
